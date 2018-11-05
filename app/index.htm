@@ -484,10 +484,12 @@
 					}
 				}
 				$("#network-tbl").val(networkEdges);
-				if (close)
-					$("#networkModal").modal("close");
-				else
-					$("#networkModal").modal("open");
+				if (networkEdges != "") {
+					if (close)
+						$("#networkModal").modal("close");
+					else
+						$("#networkModal").modal("open");
+				}
 			}
 			var getNodeById = function(id) {
 
