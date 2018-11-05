@@ -640,7 +640,7 @@
 			<div class="container">
 				<div class="row">
 					<div id="props" class="col s5 left-align">
-						<a class="btn-floating btn-large black" onclick="info()" title="Information"><i class="material-icons">info</i></a>
+						<a class="btn-floating btn-large black" onclick="info()" title="Information"><i class="material-icons">info_outline</i></a>
 						<a class="btn-floating btn-large black" onclick="exportOptions()" title="Download Edges and Nodes"><i class="material-icons">file_download</i></a>
 						<a class="btn-floating btn-large black" onclick="loadJSONGraph()" title="load JSON Graph"><i class="material-icons">file_upload</i></a>
 					</div>
@@ -691,12 +691,12 @@
 				<h4>Academic Meta Tool. AMT.</h4>
 				<p><b>Über AMT</b></p>
 				<br>
-				<p>AMT bietet die Möglichkeit sämtlichen Kanten eine Gewichtung hinzuzufügen, um dadurch die Vagheit dieser Kante auszudrücken. Eine Beziehung zwischen zwei Knoten besteht also nur zu einem gewissen Grad. Dieser Grad, d.h. das Kantengewicht, wird üblicherweise in Prozent angegeben. AMT beinhaltet zusätzlich ein Verfahren, mit dem - unter Zuhilfenahme einer vordefinierten Ontologie - aus vorhandenen graphbasierten Daten automatisch Schlussfolgerungen gezogen werden können (Reasoning). Ein Prototyp des AMTs steht hier als Web-Anwendung zur Verfügung. In einer entwickelten Test-Ontologie können <b>Personen</b> und <b>Interessen</b> und deren Beziehungen in einem gewissen Grad zueinander modelliert werden. Diese Ontologie beinhaltet neben den genannten beiden Klassen weitere Relationen, so dass Personen und Interessen miteinander in Beziehung gesetzt werden können. Außerdem enthält die Ontologie Axiome, um automatisiert aus bestehenden Beziehungen neue Beziehungen generieren zu können.</p>
+				<p>AMT bietet die Möglichkeit sämtlichen Kanten eine Gewichtung hinzuzufügen, um dadurch die Vagheit dieser Kante auszudrücken. Eine Beziehung zwischen zwei Knoten besteht also nur zu einem gewissen Grad. Dieser Grad, d.h. das Kantengewicht, wird üblicherweise in Prozent angegeben. AMT beinhaltet zusätzlich ein Verfahren, mit dem - unter Zuhilfenahme einer vordefinierten Ontologie - aus vorhandenen graphbasierten Daten automatisch Schlussfolgerungen gezogen werden können (Reasoning). Ein Prototyp des AMTs steht hier als Web-Anwendung zur Verfügung. In einer entwickelten Test-Ontologie können <b>Personen</b>, <b>Interessen</b> sowie <b>Stati</b> und deren Beziehungen in einem gewissen Grad zueinander modelliert werden. Diese Ontologie beinhaltet neben den genannten beiden Klassen weitere Relationen, so dass Personen und Interessen miteinander in Beziehung gesetzt werden können. Außerdem enthält die Ontologie Axiome, um automatisiert aus bestehenden Beziehungen neue Beziehungen generieren zu können.</p>
 				<br>
 				<p><b>How to?</b></p>
 				<br>
 				<p>
-					1. Auswahl der Ontologie.
+					1. Auswahl der Ontologie (hier das KonGeoS-Netzwerk).
 					<br>
 					2. Ggf. Laden eines JSON-Graphen über "Laden-Button."
 					<br>
@@ -706,14 +706,10 @@
 					<br>
 					5. Label, Relation und Gewicht im "Edit-Modal" modifizieren und mit "Save-Button" übernehmen (oder Änderungen verwerfen / Node löschen).
 					<br>
-					6. Über blauen "Close-Editmode-Button" in den Reasoning Modus kommen oder mit dem roten "Close-Button" die Änderungen verwerfen.
+					6. Über blauen "Reasoning-Button" in den Reasoning Modus kommen oder mit dem roten "Close-Button" die Änderungen verwerfen.
 					<br>
 					7. Graph exportieren über "Export-Button".
 				</p>
-				<br>
-				<p><b>Auswahl der Ontologie</b></p>
-				<br>
-				<p>Wählen Sie mit dem "Palettensymbol" die Ontologie aus.</p>
 				<br>
 				<p><b>Export</b></p>
 				<br>
@@ -784,7 +780,7 @@
 	        &nbsp;&nbsp;&nbsp;&nbsp;
 	        <a class="btn-floating btn-small black"><i class="material-icons">bubble_chart</i></a>&nbsp;<i>go to reasoning mode</i>
 	        <br><br>
-			<a class="btn-floating btn-small black"><i class="material-icons">info</i></a>&nbsp;<i>info</i>
+			<a class="btn-floating btn-small black"><i class="material-icons">info_outline</i></a>&nbsp;<i>info</i>
 			&nbsp;&nbsp;&nbsp;&nbsp;
 			<a class="btn-floating btn-small black"><i class="material-icons">file_download</i></a>&nbsp;<i>download data</i>
 	        &nbsp;&nbsp;&nbsp;&nbsp;
