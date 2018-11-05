@@ -1,0 +1,110 @@
+@prefix kongeos: <http://kongeos.de#> .
+@prefix amt: <http://academic-meta-tool.xyz/vocab#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# AMT Ontology - Leonard Edition
+# http://academic-meta-tool.xyz/ontology
+amt:Concept rdfs:subClassOf rdfs:Class .
+amt:Role rdfs:subClassOf rdf:Property .
+amt:Axiom rdfs:subclassOf rdfs:Class .
+amt:InferenceAxiom rdfs:subClassOf amt:Axiom .
+amt:IntegrityAxiom rdfs:subClassOf amt:Axiom .
+amt:RoleChainAxiom rdfs:subClassOf amt:InferenceAxiom .
+amt:InverseAxiom rdfs:subClassOf amt:InferenceAxiom .
+amt:DisjointAxiom rdfs:subClassOf amt:IntegrityAxiom .
+amt:SelfDisjointAxiom rdfs:subClassOf amt:IntegrityAxiom .
+amt:Logic rdfs:subClassOf rdfs:Class .
+amt:LukasiewiczLogic rdf:type amt:Logic .
+amt:ProductLogic rdf:type amt:Logic .
+amt:GoedelLogic rdf:type amt:Logic .
+
+# concepts
+
+kongeos:Person rdf:type amt:Concept .
+kongeos:Person rdfs:label "Person" .
+kongeos:Person amt:placeholder "Name" .
+
+kongeos:Interest rdf:type amt:Concept .
+kongeos:Interest rdfs:label "Interesse" .
+kongeos:Interest amt:placeholder "Interesse" .
+
+kongeos:State rdf:type amt:Concept .
+kongeos:State rdfs:label "Status" .
+kongeos:State amt:placeholder "Status" .
+
+# roles
+
+kongeos:connectedWith rdf:type amt:Role .
+kongeos:connectedWith rdfs:label "is connected with" .
+kongeos:connectedWith rdfs:domain kongeos:Person .
+kongeos:connectedWith rdfs:range kongeos:Person .
+
+kongeos:interestedIn rdf:type amt:Role .
+kongeos:interestedIn rdfs:label "is interested in" .
+kongeos:interestedIn rdfs:domain kongeos:Person .
+kongeos:interestedIn rdfs:range kongeos:Interest .
+
+kongeos:interestOf rdf:type amt:Role .
+kongeos:interestOf rdfs:label "is an interest of" .
+kongeos:interestOf rdfs:domain kongeos:Interest .
+kongeos:interestOf rdfs:range kongeos:Person .
+
+kongeos:hasState rdf:type amt:Role .
+kongeos:hasState rdfs:label "has state" .
+kongeos:hasState rdfs:domain kongeos:Person .
+kongeos:hasState rdfs:range kongeos:State .
+
+kongeos:stateOf rdf:type amt:Role .
+kongeos:stateOf rdfs:label "is the state of" .
+kongeos:stateOf rdfs:domain kongeos:State .
+kongeos:stateOf rdfs:range kongeos:Person .
+
+# axioms
+
+# RoleChainAxiom
+
+kongeos:Axiom01 rdf:type amt:RoleChainAxiom .
+kongeos:Axiom01 amt:antecedent1 kongeos:connectedWith .
+kongeos:Axiom01 amt:antecedent2 kongeos:connectedWith .
+kongeos:Axiom01 amt:consequent kongeos:connectedWith .
+kongeos:Axiom01 amt:logic amt:ProductLogic .
+
+kongeos:Axiom04 rdf:type amt:RoleChainAxiom .
+kongeos:Axiom04 amt:antecedent1 kongeos:interestedIn .
+kongeos:Axiom04 amt:antecedent2 kongeos:interestOf .
+kongeos:Axiom04 amt:consequent kongeos:connectedWith .
+kongeos:Axiom04 amt:logic amt:LukasiewiczLogic .
+
+kongeos:Axiom08 rdf:type amt:RoleChainAxiom .
+kongeos:Axiom08 amt:antecedent1 kongeos:hasState .
+kongeos:Axiom08 amt:antecedent2 kongeos:stateOf .
+kongeos:Axiom08 amt:consequent kongeos:connectedWith .
+kongeos:Axiom08 amt:logic amt:LukasiewiczLogic .
+
+# InverseAxiom
+
+kongeos:Axiom10 rdf:type amt:InverseAxiom .
+kongeos:Axiom10 amt:antecedent kongeos:interestOf .
+kongeos:Axiom10 amt:inverse kongeos:interestedIn .
+
+kongeos:Axiom11 rdf:type amt:InverseAxiom .
+kongeos:Axiom11 amt:antecedent kongeos:interestedIn .
+kongeos:Axiom11 amt:inverse kongeos:interestOf .
+
+kongeos:Axiom14 rdf:type amt:InverseAxiom .
+kongeos:Axiom14 amt:antecedent kongeos:stateOf .
+kongeos:Axiom14 amt:inverse kongeos:hasState .
+
+kongeos:Axiom15 rdf:type amt:InverseAxiom .
+kongeos:Axiom15 amt:antecedent kongeos:hasState .
+kongeos:Axiom15 amt:inverse kongeos:stateOf .
+
+kongeos:Axiom18 rdf:type amt:InverseAxiom .
+kongeos:Axiom18 amt:antecedent kongeos:connectedWith .
+kongeos:Axiom18 amt:inverse kongeos:connectedWith .
+
+# SelfDisjointAxiom
+
+kongeos:Axiom20 rdf:type amt:SelfDisjointAxiom .
+kongeos:Axiom20 amt:role kongeos:connectedWith .
