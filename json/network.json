@@ -1,0 +1,615 @@
+{
+    "nodes": [{
+        "id": "http://academic-meta-tool.xyz/vocab#efjTysAbIzpB",
+        "label": "Florian",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#VclTpRpoNDLV",
+        "label": "Jakob",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#vWExRXDVEIIS",
+        "label": "Tim",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#GgnCeUVxVAga",
+        "label": "Felix",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#iCkGZaXTCsxB",
+        "label": "Michael",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#ZlUwNaqCCjmi",
+        "label": "Florian S",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#vUOxSSUtqSGg",
+        "label": "Nadine",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#XUoXEbgbOWCT",
+        "label": "Lukas",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#AXuPJnfHVLmH",
+        "label": "Julius",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#FIMzVqyClDIg",
+        "label": "Stefan",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#JeRUnQsGArBi",
+        "label": "FV KonGeoS e.V.",
+        "concept": "http://kongeos.de#State",
+        "length": null,
+        "color": {
+            "background": "#00e676",
+            "border": "#00e676",
+            "highlight": {
+                "background": "#00e676",
+                "border": "#00e676"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#vDHYfiJYZhJt",
+        "label": "KonGeoS",
+        "concept": "http://kongeos.de#State",
+        "length": null,
+        "color": {
+            "background": "#00e676",
+            "border": "#00e676",
+            "highlight": {
+                "background": "#00e676",
+                "border": "#00e676"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#FsRoTovzSJHs",
+        "label": "DVW",
+        "concept": "http://kongeos.de#Interest",
+        "length": null,
+        "color": {
+            "background": "#ff1744",
+            "border": "#ff1744",
+            "highlight": {
+                "background": "#ff1744",
+                "border": "#ff1744"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#IAVieMnlYXLp",
+        "label": "VDV",
+        "concept": "http://kongeos.de#Interest",
+        "length": null,
+        "color": {
+            "background": "#ff1744",
+            "border": "#ff1744",
+            "highlight": {
+                "background": "#ff1744",
+                "border": "#ff1744"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }],
+    "edges": [{
+        "role": "http://kongeos.de#hasState",
+        "from": "http://academic-meta-tool.xyz/vocab#efjTysAbIzpB",
+        "to": "http://academic-meta-tool.xyz/vocab#JeRUnQsGArBi",
+        "width": "0.90",
+        "label": 0.9,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#00e676",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "9cf77994-0a8c-4c08-aba4-b516cf2368e3"
+    }, {
+        "role": "http://kongeos.de#hasState",
+        "from": "http://academic-meta-tool.xyz/vocab#VclTpRpoNDLV",
+        "to": "http://academic-meta-tool.xyz/vocab#JeRUnQsGArBi",
+        "width": "0.99",
+        "label": 0.99,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#00e676",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "ea7e0516-c997-4154-85a9-6a439c01928b"
+    }, {
+        "role": "http://kongeos.de#hasState",
+        "from": "http://academic-meta-tool.xyz/vocab#vWExRXDVEIIS",
+        "to": "http://academic-meta-tool.xyz/vocab#JeRUnQsGArBi",
+        "width": "0.95",
+        "label": 0.95,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#00e676",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "000568cc-6119-4c06-947e-d537af67d198"
+    }, {
+        "role": "http://kongeos.de#hasState",
+        "from": "http://academic-meta-tool.xyz/vocab#GgnCeUVxVAga",
+        "to": "http://academic-meta-tool.xyz/vocab#vDHYfiJYZhJt",
+        "width": "0.99",
+        "label": 0.99,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#00e676",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "74e9e054-c898-4803-b095-dbf077e21cbd"
+    }, {
+        "role": "http://kongeos.de#hasState",
+        "from": "http://academic-meta-tool.xyz/vocab#iCkGZaXTCsxB",
+        "to": "http://academic-meta-tool.xyz/vocab#vDHYfiJYZhJt",
+        "width": "0.95",
+        "label": 0.95,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#00e676",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "6b35a000-6f5b-4a80-9efb-af0b73819e1e"
+    }, {
+        "role": "http://kongeos.de#hasState",
+        "from": "http://academic-meta-tool.xyz/vocab#ZlUwNaqCCjmi",
+        "to": "http://academic-meta-tool.xyz/vocab#vDHYfiJYZhJt",
+        "width": "0.90",
+        "label": 0.9,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#00e676",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "c972ea52-0087-4b89-8fc6-a3d1239bf66e"
+    }, {
+        "role": "http://kongeos.de#hasState",
+        "from": "http://academic-meta-tool.xyz/vocab#XUoXEbgbOWCT",
+        "to": "http://academic-meta-tool.xyz/vocab#vDHYfiJYZhJt",
+        "width": "0.90",
+        "label": 0.9,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#00e676",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "0094559a-1eae-475f-a677-31bb805d6d32"
+    }, {
+        "role": "http://kongeos.de#hasState",
+        "from": "http://academic-meta-tool.xyz/vocab#vUOxSSUtqSGg",
+        "to": "http://academic-meta-tool.xyz/vocab#vDHYfiJYZhJt",
+        "width": "0.90",
+        "label": 0.9,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#00e676",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "a0e98c29-b61f-4da1-aa1c-57702b839dd3"
+    }, {
+        "role": "http://kongeos.de#hasState",
+        "from": "http://academic-meta-tool.xyz/vocab#AXuPJnfHVLmH",
+        "to": "http://academic-meta-tool.xyz/vocab#vDHYfiJYZhJt",
+        "width": "0.80",
+        "label": 0.8,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#00e676",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "a294e168-f6a0-43b8-963c-e4fe4630d65f"
+    }, {
+        "role": "http://kongeos.de#hasState",
+        "from": "http://academic-meta-tool.xyz/vocab#FIMzVqyClDIg",
+        "to": "http://academic-meta-tool.xyz/vocab#vDHYfiJYZhJt",
+        "width": "0.80",
+        "label": 0.8,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#00e676",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "17dc6e68-b7d1-4882-b949-dad7bc7e5aae"
+    }, {
+        "role": "http://kongeos.de#interestedIn",
+        "from": "http://academic-meta-tool.xyz/vocab#AXuPJnfHVLmH",
+        "to": "http://academic-meta-tool.xyz/vocab#FsRoTovzSJHs",
+        "width": "0.95",
+        "label": 0.95,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#ff1744",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "ff4d874f-fba9-4e18-be57-e539a9806dd5"
+    }, {
+        "role": "http://kongeos.de#interestedIn",
+        "from": "http://academic-meta-tool.xyz/vocab#FIMzVqyClDIg",
+        "to": "http://academic-meta-tool.xyz/vocab#FsRoTovzSJHs",
+        "width": "0.95",
+        "label": 0.95,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#ff1744",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "77c9b550-1807-49aa-adc6-c15cb10bf73f"
+    }, {
+        "role": "http://kongeos.de#interestedIn",
+        "from": "http://academic-meta-tool.xyz/vocab#vUOxSSUtqSGg",
+        "to": "http://academic-meta-tool.xyz/vocab#IAVieMnlYXLp",
+        "width": "0.95",
+        "label": 0.95,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#ff1744",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "ad34ae1b-fe13-467b-8395-c5ba900b7588"
+    }, {
+        "role": "http://kongeos.de#interestedIn",
+        "from": "http://academic-meta-tool.xyz/vocab#efjTysAbIzpB",
+        "to": "http://academic-meta-tool.xyz/vocab#FsRoTovzSJHs",
+        "width": "0.95",
+        "label": 0.95,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#ff1744",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "44ab584f-c29d-413a-8dc0-21f68218e203"
+    }, {
+        "role": "http://kongeos.de#interestedIn",
+        "from": "http://academic-meta-tool.xyz/vocab#efjTysAbIzpB",
+        "to": "http://academic-meta-tool.xyz/vocab#IAVieMnlYXLp",
+        "width": "0.80",
+        "label": 0.8,
+        "font": {
+            "align": "middle",
+            "size": 16,
+            "color": "black",
+            "face": "monospace"
+        },
+        "arrowStrikethrough": false,
+        "chosen": false,
+        "color": {
+            "color": "#ff1744",
+            "highlight": "black"
+        },
+        "length": 200,
+        "smooth": false,
+        "dashes": false,
+        "arrows": "to",
+        "id": "618e8241-ebde-42a9-b770-8f7ef756b5a3"
+    }]
+}

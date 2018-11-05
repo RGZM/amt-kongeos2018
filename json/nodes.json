@@ -1,0 +1,270 @@
+{
+    "nodes": [{
+        "id": "http://academic-meta-tool.xyz/vocab#efjTysAbIzpB",
+        "label": "Florian",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#VclTpRpoNDLV",
+        "label": "Jakob",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#vWExRXDVEIIS",
+        "label": "Tim",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#GgnCeUVxVAga",
+        "label": "Felix",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#iCkGZaXTCsxB",
+        "label": "Michael",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#ZlUwNaqCCjmi",
+        "label": "Florian S",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#vUOxSSUtqSGg",
+        "label": "Nadine",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#XUoXEbgbOWCT",
+        "label": "Lukas",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#AXuPJnfHVLmH",
+        "label": "Julius",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#FIMzVqyClDIg",
+        "label": "Stefan",
+        "concept": "http://kongeos.de#Person",
+        "length": null,
+        "color": {
+            "background": "#2979ff",
+            "border": "#2979ff",
+            "highlight": {
+                "background": "#2979ff",
+                "border": "#2979ff"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#JeRUnQsGArBi",
+        "label": "FV KonGeoS e.V.",
+        "concept": "http://kongeos.de#State",
+        "length": null,
+        "color": {
+            "background": "#00e676",
+            "border": "#00e676",
+            "highlight": {
+                "background": "#00e676",
+                "border": "#00e676"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#vDHYfiJYZhJt",
+        "label": "KonGeoS",
+        "concept": "http://kongeos.de#State",
+        "length": null,
+        "color": {
+            "background": "#00e676",
+            "border": "#00e676",
+            "highlight": {
+                "background": "#00e676",
+                "border": "#00e676"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#FsRoTovzSJHs",
+        "label": "DVW",
+        "concept": "http://kongeos.de#Interest",
+        "length": null,
+        "color": {
+            "background": "#ff1744",
+            "border": "#ff1744",
+            "highlight": {
+                "background": "#ff1744",
+                "border": "#ff1744"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }, {
+        "id": "http://academic-meta-tool.xyz/vocab#IAVieMnlYXLp",
+        "label": "VDV",
+        "concept": "http://kongeos.de#Interest",
+        "length": null,
+        "color": {
+            "background": "#ff1744",
+            "border": "#ff1744",
+            "highlight": {
+                "background": "#ff1744",
+                "border": "#ff1744"
+            }
+        },
+        "shape": "dot",
+        "font": {
+            "size": 16,
+            "face": "monospace"
+        },
+        "size": 20
+    }],
+    "edges": []
+}
