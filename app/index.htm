@@ -484,6 +484,11 @@
 					}
 				}
 				$("#network-tbl").val(networkEdges);
+				for (var j in _AMT.thisNodes) {
+					if (_AMT.thisNodes[j].id === _AMT.selectedNode) {
+						$("#con-name").html(_AMT.thisNodes[j].label);
+					}
+				}
 				if (networkEdges != "") {
 					if (close)
 						$("#networkModal").modal("close");
@@ -833,7 +838,7 @@
 	</div>
 	<div id="networkModal" class="modal">
 		<div class="modal-content" style="width:100%;height:calc(100% - 50px);padding:20px;margin:0px;">
-			<h4>Connections</h4>
+			<h4>Connections of <span id="con-name"></span></h4>
 			<textarea id="network-tbl" style="width:100%;height:100%;font-family:'Courier New';font-size:30px;padding:20px;"></textarea>
 		</div>
 	</div>
