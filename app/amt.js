@@ -18,7 +18,6 @@ function UUID() {
 
 function copyToClipboard(element) {
     var text = $(element).clone().find('br').prepend('\r\n').end().text();
-    //console.log(text);
     element = $('<textarea>').appendTo('body').val(text).select();
     document.execCommand('copy');
     element.remove();
@@ -297,7 +296,6 @@ var AMT = function() {
                                 if (fromConcept != toConcept) {
                                     c = conjunction(graph.edges[j1].width, graph.edges[j2].width, a.logic);
                                 } else {
-                                    //console.log(fromConcept,toConcept);
                                 }
                                 if (updateReasoning(graph.edges, a.consequent, graph.edges[j1].from, graph.edges[j2].to, c))
                                     change = true;
@@ -383,7 +381,6 @@ var AMT = function() {
         return consistent();
     };
     this.editAssertion = function(role, from, to, width) {
-        console.log(role, from, to, width);
         var index = search(GRAPH.edited.edges, role, from, to);
         if (index >= 0) {
             if (width > 0)
@@ -418,7 +415,6 @@ var AMT = function() {
         return consistent();
     };
     this.addExistingAssertion = function(id, role, from, to, width) {
-        console.log("addExistingAssertion");
         GRAPH.edited.edges.push({
             role: role,
             from: from,
