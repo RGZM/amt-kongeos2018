@@ -192,7 +192,7 @@
     }, {
         "id": "http://academic-meta-tool.xyz/vocab#JeRUnQsGArBi",
         "label": "FV KonGeoS e.V.",
-        "concept": "http://kongeos.de#State",
+        "concept": "http://kongeos.de#Organisation",
         "length": null,
         "color": {
             "background": "#00e676",
@@ -211,7 +211,7 @@
     }, {
         "id": "http://academic-meta-tool.xyz/vocab#vDHYfiJYZhJt",
         "label": "KonGeoS",
-        "concept": "http://kongeos.de#State",
+        "concept": "http://kongeos.de#Organisation",
         "length": null,
         "color": {
             "background": "#00e676",
@@ -230,7 +230,7 @@
     }, {
         "id": "http://academic-meta-tool.xyz/vocab#FsRoTovzSJHs",
         "label": "DVW",
-        "concept": "http://kongeos.de#Interest",
+        "concept": "http://kongeos.de#Verband",
         "length": null,
         "color": {
             "background": "#ff1744",
@@ -249,7 +249,7 @@
     }, {
         "id": "http://academic-meta-tool.xyz/vocab#IAVieMnlYXLp",
         "label": "VDV",
-        "concept": "http://kongeos.de#Interest",
+        "concept": "http://kongeos.de#Verband",
         "length": null,
         "color": {
             "background": "#ff1744",
