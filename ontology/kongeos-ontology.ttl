@@ -77,8 +77,8 @@ kongeos:RCA2 amt:consequent kongeos:connectedWith .
 kongeos:RCA2 amt:logic amt:LukasiewiczLogic .
 
 kongeos:RCA3 rdf:type amt:RoleChainAxiom .
-kongeos:RCA3 amt:antecedent1 kongeos:hasState .
-kongeos:RCA3 amt:antecedent2 kongeos:stateOf .
+kongeos:RCA3 amt:antecedent1 kongeos:belongsTo .
+kongeos:RCA3 amt:antecedent2 kongeos:partOf .
 kongeos:RCA3 amt:consequent kongeos:connectedWith .
 kongeos:RCA3 amt:logic amt:LukasiewiczLogic .
 
@@ -93,12 +93,12 @@ kongeos:IA2 amt:antecedent kongeos:interestedIn .
 kongeos:IA2 amt:inverse kongeos:interestOf .
 
 kongeos:IA3 rdf:type amt:InverseAxiom .
-kongeos:IA3 amt:antecedent kongeos:stateOf .
-kongeos:IA3 amt:inverse kongeos:hasState .
+kongeos:IA3 amt:antecedent kongeos:partOf .
+kongeos:IA3 amt:inverse kongeos:belongsTo .
 
 kongeos:IA4 rdf:type amt:InverseAxiom .
-kongeos:IA4 amt:antecedent kongeos:hasState .
-kongeos:IA4 amt:inverse kongeos:stateOf .
+kongeos:IA4 amt:antecedent kongeos:belongsTo .
+kongeos:IA4 amt:inverse kongeos:partOf .
 
 kongeos:IA5 rdf:type amt:InverseAxiom .
 kongeos:IA5 amt:antecedent kongeos:connectedWith .
