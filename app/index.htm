@@ -98,7 +98,7 @@
 								};
 								updated.nodes[i].size = 20;
 							}
-							if (updated.nodes[i].concept === _AMT.prefix + "Interest") {
+							if (updated.nodes[i].concept === _AMT.prefix + "Verband") {
 								updated.nodes[i].color = {
 									background: '#ff1744',
 									border: '#ff1744',
@@ -114,7 +114,7 @@
 								};
 								updated.nodes[i].size = 20;
 							}
-							if (updated.nodes[i].concept === _AMT.prefix + "State") {
+							if (updated.nodes[i].concept === _AMT.prefix + "Organisation") {
 								updated.nodes[i].color = {
 									background: '#00e676',
 									border: '#00e676',
@@ -166,7 +166,7 @@
 							if (updated.edges[i].role === roleWithPrefix +"interestOf") {
 								updated.edges[i].hidden = true;
 							}
-							if (updated.edges[i].role === roleWithPrefix +"hasState") {
+							if (updated.edges[i].role === roleWithPrefix +"belongsTo") {
 								updated.edges[i].color = {
 									color: "#00e676",
 									highlight: "black"
@@ -177,7 +177,7 @@
 								updated.edges[i].dashes = false;
 								updated.edges[i].arrows = "to";
 							}
-							if (updated.edges[i].role === roleWithPrefix +"stateOf") {
+							if (updated.edges[i].role === roleWithPrefix +"partOf") {
 								updated.edges[i].hidden = true;
 							}
 						}
@@ -204,10 +204,10 @@
 								};
 								updated.nodes[i].size = 20;
 							}
-							if (updated.nodes[i].concept === _AMT.prefix + "Interest") {
+							if (updated.nodes[i].concept === _AMT.prefix + "Verband") {
 								updated.nodes[i].hidden = true;
 							}
-							if (updated.nodes[i].concept === _AMT.prefix + "State") {
+							if (updated.nodes[i].concept === _AMT.prefix + "Organisation") {
 								updated.nodes[i].hidden = true;
 							}
 						}
@@ -235,10 +235,10 @@
 							if (updated.edges[i].role === roleWithPrefix +"interestOf") {
 								updated.edges[i].hidden = true;
 							}
-							if (updated.edges[i].role === roleWithPrefix +"hasState") {
+							if (updated.edges[i].role === roleWithPrefix +"belongsTo") {
 								updated.edges[i].hidden = true;
 							}
-							if (updated.edges[i].role === roleWithPrefix +"stateOf") {
+							if (updated.edges[i].role === roleWithPrefix +"partOf") {
 								updated.edges[i].hidden = true;
 							}
 						}
@@ -296,7 +296,7 @@
 					if (roles[i].role === _AMT.prefix + "interestOf") {
 						roles.splice(i, 1);
 					}
-					if (roles[i].role === _AMT.prefix + "stateOf") {
+					if (roles[i].role === _AMT.prefix + "partOf") {
 						roles.splice(i, 1);
 					}
 				}
@@ -383,11 +383,11 @@
 							var a = $("<a style='margin-left:3px;margin-right:3px;' class='btn-floating btn-large edit blue accent-3' onclick='openModal(false,\""+concepts[i].concept+"\")' title='Add "+concepts[i].label+" node'><i class='material-icons'>add"+concepts[i].label.substr(0,1)+"</i></a>");
 							$("#buttons").prepend(a);
 						}
-						if (concepts[i].concept === _AMT.prefix + "Interest") {
+						if (concepts[i].concept === _AMT.prefix + "Verband") {
 							var a = $("<a style='margin-left:3px;margin-right:3px;'class='btn-floating btn-large edit red accent-3' onclick='openModal(false,\""+concepts[i].concept+"\")' title='Add "+concepts[i].label+" node'><i class='material-icons'>add"+concepts[i].label.substr(0,1)+"</i></a>");
 							$("#buttons").prepend(a);
 						}
-						if (concepts[i].concept === _AMT.prefix + "State") {
+						if (concepts[i].concept === _AMT.prefix + "Organisation") {
 							var a = $("<a style='margin-left:3px;margin-right:3px;'class='btn-floating btn-large edit green accent-3' onclick='openModal(false,\""+concepts[i].concept+"\")' title='Add "+concepts[i].label+" node'><i class='material-icons'>add"+concepts[i].label.substr(0,1)+"</i></a>");
 							$("#buttons").prepend(a);
 						}
@@ -576,23 +576,23 @@
 							map.push(nodeItem);
 							var cypherNode = "("+nodeItem.shortID+":Person{label: '"+_AMT.thisNodes[node].label+"'})";
 							nodesAndEdges += "CREATE "+cypherNode+ "\r\n";
-						} else if (_AMT.thisNodes[node].concept.includes("Interest")) {
+						} else if (_AMT.thisNodes[node].concept.includes("Verband")) {
 							var nodeItem = {};
 							nodeItem.id = _AMT.thisNodes[node].id;
 							nodeItem.node = cypherNode;
 							nodeItem.shortID = _AMT.thisNodes[node].id.replace("http://academic-meta-tool.xyz/vocab#","");
 							nodeIDs.push(nodeItem.shortID);
 							map.push(nodeItem);
-							var cypherNode = "("+nodeItem.shortID+":Interest{label: '"+_AMT.thisNodes[node].label+"'})";
+							var cypherNode = "("+nodeItem.shortID+":Verband{label: '"+_AMT.thisNodes[node].label+"'})";
 							nodesAndEdges += "CREATE "+cypherNode+ "\r\n";
-						} else if (_AMT.thisNodes[node].concept.includes("State")) {
+						} else if (_AMT.thisNodes[node].concept.includes("Organisation")) {
 							var nodeItem = {};
 							nodeItem.id = _AMT.thisNodes[node].id;
 							nodeItem.node = cypherNode;
 							nodeItem.shortID = _AMT.thisNodes[node].id.replace("http://academic-meta-tool.xyz/vocab#","");
 							nodeIDs.push(nodeItem.shortID);
 							map.push(nodeItem);
-							var cypherNode = "("+nodeItem.shortID+":State{label: '"+_AMT.thisNodes[node].label+"'})";
+							var cypherNode = "("+nodeItem.shortID+":Organisation{label: '"+_AMT.thisNodes[node].label+"'})";
 							nodesAndEdges += "CREATE "+cypherNode+ "\r\n";
 						}
 					}
@@ -638,8 +638,8 @@
 							}
 							nodesAndEdges += "MERGE "+cypherEdge+ "\r\n";
 						}
-						if (_AMT.thisEdges[edge].role.includes("hasState") && !_AMT.thisEdges[edge].hidden) {
-							var cypherEdge = "(*)-[:HAS_STATE{width:%}]->(**)";
+						if (_AMT.thisEdges[edge].role.includes("belongsTo") && !_AMT.thisEdges[edge].hidden) {
+							var cypherEdge = "(*)-[:BELONGS_TO{width:%}]->(**)";
 							for (var item in map) {
 								if (map[item].id===_AMT.thisEdges[edge].from) {
 									cypherEdge = cypherEdge.replace("*",map[item].shortID);
@@ -753,8 +753,8 @@
 			<br>
 			<p>AMT bietet die Möglichkeit sämtlichen Kanten eine Gewichtung hinzuzufügen, um dadurch die Vagheit dieser Kante auszudrücken. Eine Beziehung zwischen zwei Knoten besteht also nur zu einem gewissen Grad. Dieser Grad, d.h. das Kantengewicht, wird
 				üblicherweise in Prozent angegeben. AMT beinhaltet zusätzlich ein Verfahren, mit dem - unter Zuhilfenahme einer vordefinierten Ontologie - aus vorhandenen graphbasierten Daten automatisch Schlussfolgerungen gezogen werden können (Reasoning). Ein
-				Prototyp des AMTs steht hier als Web-Anwendung zur Verfügung. In einer entwickelten Test-Ontologie können <b>Personen</b>, <b>Interessen</b> sowie <b>Stati</b> und deren Beziehungen in einem gewissen Grad zueinander modelliert werden. Diese
-				Ontologie beinhaltet neben den genannten beiden Klassen weitere Relationen, so dass Personen und Interessen miteinander in Beziehung gesetzt werden können. Außerdem enthält die Ontologie Axiome, um automatisiert aus bestehenden Beziehungen neue
+				Prototyp des AMTs steht hier als Web-Anwendung zur Verfügung. In einer entwickelten Test-Ontologie können <b>Personen</b>, <b>KonGeoS-Organisationen</b> sowie <b>Berufsverbände</b> und deren Beziehungen in einem gewissen Grad zueinander modelliert werden. Diese
+				Ontologie beinhaltet neben den genannten beiden Klassen weitere Relationen, so dass Personen und Strukturen miteinander in Beziehung gesetzt werden können. Außerdem enthält die Ontologie Axiome, um automatisiert aus bestehenden Beziehungen neue
 				Beziehungen generieren zu können.</p>
 			<br>
 			<p><b>How to?</b></p>
@@ -861,8 +861,8 @@
 		<a class="btn-floating btn-small black"><i class="material-icons">file_upload</i></a>&nbsp;<i>load JSON</i>
 		<br><br>
 		<a class="btn-floating btn-small blue accent-3"><i class='material-icons'>addP</i></a>&nbsp;<i>add Person</i>
-		<a class="btn-floating btn-small red accent-3"><i class='material-icons'>addI</i></a>&nbsp;<i>add Interest</i>
-		<a class="btn-floating btn-small green accent-3"><i class='material-icons'>addS</i></a>&nbsp;<i>add State</i>
+		<a class="btn-floating btn-small red accent-3"><i class='material-icons'>addV</i></a>&nbsp;<i>add Verband</i>
+		<a class="btn-floating btn-small green accent-3"><i class='material-icons'>addO</i></a>&nbsp;<i>add Organisation</i>
 	</div>
 	<div class="logos">
 		<a href="http://academic-meta-tool.xyz" target="_blank"><img src="amt_logos.png" height="200"></a>
