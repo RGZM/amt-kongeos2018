@@ -177,7 +177,7 @@
 								updated.edges[i].dashes = false;
 								updated.edges[i].arrows = "to";
 							}
-							if (updated.edges[i].role === roleWithPrefix +"partOf") {
+							if (updated.edges[i].role === roleWithPrefix +"hasMember") {
 								updated.edges[i].hidden = true;
 							}
 						}
@@ -238,7 +238,7 @@
 							if (updated.edges[i].role === roleWithPrefix +"belongsTo") {
 								updated.edges[i].hidden = true;
 							}
-							if (updated.edges[i].role === roleWithPrefix +"partOf") {
+							if (updated.edges[i].role === roleWithPrefix +"hasMember") {
 								updated.edges[i].hidden = true;
 							}
 						}
@@ -296,7 +296,7 @@
 					if (roles[i].role === _AMT.prefix + "interestOf") {
 						roles.splice(i, 1);
 					}
-					if (roles[i].role === _AMT.prefix + "partOf") {
+					if (roles[i].role === _AMT.prefix + "hasMember") {
 						roles.splice(i, 1);
 					}
 				}

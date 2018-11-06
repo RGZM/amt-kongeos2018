@@ -55,10 +55,10 @@ kongeos:belongsTo rdfs:label "belongs to" .
 kongeos:belongsTo rdfs:domain kongeos:Person .
 kongeos:belongsTo rdfs:range kongeos:Organisation .
 
-kongeos:partOf rdf:type amt:Role .
-kongeos:partOf rdfs:label "is a part of" .
-kongeos:partOf rdfs:domain kongeos:Organisation .
-kongeos:partOf rdfs:range kongeos:Person .
+kongeos:hasmember rdf:type amt:Role .
+kongeos:hasMember rdfs:label "has the member" .
+kongeos:hasMember rdfs:domain kongeos:Organisation .
+kongeos:hasMember rdfs:range kongeos:Person .
 
 # Axioms
 
@@ -78,7 +78,7 @@ kongeos:RCA2 amt:logic amt:LukasiewiczLogic .
 
 kongeos:RCA3 rdf:type amt:RoleChainAxiom .
 kongeos:RCA3 amt:antecedent1 kongeos:belongsTo .
-kongeos:RCA3 amt:antecedent2 kongeos:partOf .
+kongeos:RCA3 amt:antecedent2 kongeos:hasMember .
 kongeos:RCA3 amt:consequent kongeos:connectedWith .
 kongeos:RCA3 amt:logic amt:LukasiewiczLogic .
 
@@ -93,12 +93,12 @@ kongeos:IA2 amt:antecedent kongeos:interestedIn .
 kongeos:IA2 amt:inverse kongeos:interestOf .
 
 kongeos:IA3 rdf:type amt:InverseAxiom .
-kongeos:IA3 amt:antecedent kongeos:partOf .
+kongeos:IA3 amt:antecedent kongeos:hasMember .
 kongeos:IA3 amt:inverse kongeos:belongsTo .
 
 kongeos:IA4 rdf:type amt:InverseAxiom .
 kongeos:IA4 amt:antecedent kongeos:belongsTo .
-kongeos:IA4 amt:inverse kongeos:partOf .
+kongeos:IA4 amt:inverse kongeos:hasMember .
 
 kongeos:IA5 rdf:type amt:InverseAxiom .
 kongeos:IA5 amt:antecedent kongeos:connectedWith .
